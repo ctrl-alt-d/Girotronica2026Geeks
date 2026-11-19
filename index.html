@@ -34,6 +34,47 @@
               <h2 id="intro-title">Introducció</h2>
             </div>
           </section>
+          <section class="content-slide photo-slide" aria-labelledby="festa-title" data-background-color="#000000">
+            <div class="slide-content">
+              <h2 id="festa-title">Important: fer comunitat</h2>
+              <div class="photo-gallery">
+                <img src="/assets/festa/festa-1.jpg" alt="Assistents a la Festa Open Source de Girona xerrant en grups al vestíbul, al voltant d'una taula amb ordinadors." />
+                <img src="/assets/festa/festa-2.jpg" alt="Participants de la Festa Open Source treballant plegats amb els portàtils en una taula compartida." />
+              </div>
+              <footer class="photo-footer community-footer">
+                <p>
+                  <span class="label">Festa Open Source Girona</span>
+                  <a href="https://festa-opensource.geeks.cat/" target="_blank" rel="noopener noreferrer">festa-opensource.geeks.cat</a>
+                </p>
+                <img class="community-logo" src="/assets/logo-classic/geekscat_logo.svg" alt="Geeks.cat" />
+              </footer>
+            </div>
+          </section>
+          <section class="content-slide" aria-labelledby="p5-title">
+            <div class="slide-content">
+              <h2 id="p5-title">Fet amb p5.js</h2>
+              <div class="slide-body code-body">
+<pre class="code-panel"><code><span class="tok-kw">function</span> <span class="tok-fn">setup</span>() {
+  <span class="tok-fn">createCanvas</span>(<span class="tok-num">800</span>, <span class="tok-num">800</span>);
+  <span class="tok-fn">rectMode</span>(CENTER);
+}
+
+<span class="tok-kw">function</span> <span class="tok-fn">draw</span>() {
+  <span class="tok-fn">background</span>(<span class="tok-num">0</span>);
+  <span class="tok-fn">fill</span>(<span class="tok-num">255</span>, <span class="tok-num">204</span>, <span class="tok-num">0</span>);
+  <span class="tok-comment">// x, y, amplada, alçada</span>
+  <span class="tok-fn">rect</span>(<span class="tok-num">400</span>, <span class="tok-num">600</span>, <span class="tok-num">300</span>, <span class="tok-num">300</span>);
+}</code></pre>
+                <figure class="code-result">
+                  <div class="code-canvas" role="img" aria-label="Resultat del codi: un quadrat groc sobre fons negre."></div>
+                  <figcaption>
+                    JavaScript per dibuixar amb codi:
+                    <a href="https://p5js.org/" target="_blank" rel="noopener noreferrer">p5js.org</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
           <section class="content-slide" aria-labelledby="fressa-title">
             <div class="slide-content">
               <h2 id="fressa-title">El meu primer clown computing</h2>
@@ -60,6 +101,15 @@
             <div class="section-content">
               <p class="section-number" aria-hidden="true">02</p>
               <h2 id="nus-title">Nus</h2>
+            </div>
+          </section>
+          <section class="content-slide" aria-labelledby="challenge-title" data-background-color="#000000">
+            <div class="slide-content">
+              <h2 id="challenge-title">Clown computing &amp; a11y</h2>
+              <div class="slide-body challenge-body">
+                <p><strong>Repte:</strong> 15 persones han comunicat discapacitat visual.</p>
+                <img class="challenge-logo" src="/assets/a11yconf/a11yconf_logo_dark.svg" alt="a11yConf" />
+              </div>
             </div>
           </section>
           <section class="content-slide" aria-labelledby="disability-title">
@@ -121,15 +171,6 @@
                   <li><span class="pair-key">Si et costa moure't</span><span class="pair-value fragment"><b class="verdict verdict--half">A mitges</b> Cal un clic per començar</span></li>
                   <li><span class="pair-key">Si et costa entendre-ho</span><span class="pair-value fragment"><b class="verdict verdict--half">A mitges</b> No hi ha instruccions a la pantalla</span></li>
                 </ul>
-              </div>
-            </div>
-          </section>
-          <section class="content-slide" aria-labelledby="challenge-title" data-background-color="#000000">
-            <div class="slide-content">
-              <h2 id="challenge-title">Clown computing &amp; a11y</h2>
-              <div class="slide-body challenge-body">
-                <p><strong>Repte:</strong> 15 persones han comunicat discapacitat visual.</p>
-                <img class="challenge-logo" src="/assets/a11yconf/a11yconf_logo_dark.svg" alt="a11yConf" />
               </div>
             </div>
           </section>

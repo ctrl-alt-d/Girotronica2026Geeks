@@ -4,6 +4,8 @@ Slides de la xerrada de **Joan Leon** i **Dani Herrera**, en nom de l'associaci�
 [Geeks.cat](https://geeks.cat/), a [La Girotrònica 2026](https://lagirotronica.cat/)
 (Palau Firal de Girona, del 20 al 22 de novembre de 2026).
 
+**Presentació publicada:** <https://ctrl-alt-d.github.io/Girotronica2026Geeks/>
+
 > Creative Coding és un tipus de programació on l'objectiu és generar experiències
 > expressives en comptes de productes funcionals. Usarem la tecnologia per parlar de
 > programació, fer difusió d'accessibilitat i de tecnologia responsable i, alhora,
@@ -44,7 +46,7 @@ npm run preview
 
 El workflow [pages.yml](.github/workflows/pages.yml) compila i publica a GitHub Pages
 a cada `push` a `main`. Cal activar-ho un sol cop a **Settings → Pages → Source →
-GitHub Actions**. L'adreça serà <https://ctrl-alt-d.github.io/Girotronica2026Geeks/>.
+GitHub Actions**. L'adreça és <https://ctrl-alt-d.github.io/Girotronica2026Geeks/>.
 
 ## Crèdits
 
