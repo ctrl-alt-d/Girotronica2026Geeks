@@ -438,3 +438,170 @@
 .reveal img[src*='geekscat_logo'] {
   border-radius: 8px;
 }
+
+/* ---------- Nus: disability and accessibility ---------- */
+
+.stat-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  align-items: center;
+  gap: 48px;
+}
+
+.reveal .stat p {
+  margin: 0;
+}
+
+.reveal .stat-number {
+  color: var(--pink);
+  font-size: 124px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.reveal .stat .stat-text {
+  margin-top: 22px;
+  font-size: 38px;
+  line-height: 1.25;
+}
+
+.reveal .stat .stat-source {
+  margin-top: 30px;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.reveal .a11y-logo {
+  width: 330px;
+  height: 330px;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+}
+
+/* The UN accessibility logo, faint, behind the slide content. */
+.a11y-watermark .slide-content::before {
+  content: '';
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  width: 470px;
+  height: 470px;
+  background: url('../assets/a11y/accessibility_logo_dark.svg') center / contain no-repeat;
+  opacity: 0.13;
+}
+
+.a11y-watermark .slide-body {
+  position: relative;
+}
+
+.anyone-body,
+.benefit-body,
+.audit-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 34px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 24px 26px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgb(21 15 41 / 0.85);
+}
+
+.reveal .card h3 {
+  margin: 0 0 14px;
+  color: var(--pink);
+  font-size: 34px;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+  text-transform: none;
+}
+
+.reveal .card p {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.reveal .anyone-note {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.reveal .pairs {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reveal .pairs li {
+  display: grid;
+  grid-template-columns: 330px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.pair-key {
+  color: var(--pink);
+  font-size: 36px;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
+
+.pair-value {
+  font-size: 30px;
+}
+
+.reveal .audit li {
+  grid-template-columns: 380px minmax(0, 1fr);
+  padding-bottom: 12px;
+}
+
+.audit .pair-key {
+  font-size: 30px;
+}
+
+.audit .pair-value {
+  font-size: 26px;
+}
+
+.verdict {
+  display: inline-block;
+  min-width: 118px;
+  margin-right: 14px;
+  padding: 2px 0;
+  border: 2px solid currentcolor;
+  border-radius: 999px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.verdict--yes {
+  color: #7ee2a8;
+}
+
+.verdict--no {
+  color: #ff8a95;
+}
+
+.verdict--half {
+  color: var(--orange);
+}
