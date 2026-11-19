@@ -25,14 +25,15 @@ Obre l'adreça que surt al terminal.
 
 | Fitxer          | Què hi ha                                              |
 | --------------- | ------------------------------------------------------ |
-| `index.html`    | Les slides i les notes de l'orador (`<aside class="notes">`) |
+| `index.html`    | Les slides                                             |
 | `src/style.css` | L'estil (colors de La Girotrònica)                     |
-| `src/demos.js`  | Les dues demos en viu: «Codi que dibuixa» i «Codi que sona» |
+| `src/chaos.js`  | El fons animat de la portada (canvia-hi `CHAOS`)       |
 | `src/main.js`   | Configuració de Reveal i peu de pàgina comú            |
 | `assets/`       | Logos i imatges                                        |
 
-Tecles útils: fletxes o Espai per avançar, `S` per obrir la vista de l'orador amb
-les notes, `Esc` per veure totes les slides i `F` per a pantalla completa.
+Tecles útils: Espai per avançar per totes les slides en ordre, fletxes per moure's
+entre blocs (dreta/esquerra) i dins d'un bloc (avall/amunt), `Esc` per veure-les
+totes i `F` per a pantalla completa.
 
 ## Publicar
 

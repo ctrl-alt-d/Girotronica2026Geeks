@@ -1,9 +1,8 @@
 import Reveal from 'reveal.js';
-import Notes from 'reveal.js/plugin/notes';
 import 'reveal.js/reveal.css';
 import 'reveal.js/theme/black.css';
 import './style.css';
-import { setupFlowDemo, setupSoundDemo } from './demos.js';
+import { createChaosBackground } from './chaos.js';
 import geekscatLogo from '../assets/logo-classic/geekscat_logo.svg';
 import girotronicaWordmark from '../assets/girotronica/girotronica_wordmark.svg';
 
@@ -21,14 +20,6 @@ for (const content of document.querySelectorAll('.content-slide:not(.photo-slide
   content.append(footer);
 }
 
-// Reveal listens for keys on the document. Keep Space, Enter and the arrow
-// keys inside the demo controls so they operate the control, not the deck.
-for (const zone of document.querySelectorAll('.demo-controls, .pads')) {
-  zone.addEventListener('keydown', (event) => {
-    if (event.key !== 'Escape') event.stopPropagation();
-  });
-}
-
 const deck = new Reveal({
   width: 1200,
   height: 675,
@@ -37,15 +28,14 @@ const deck = new Reveal({
   progress: true,
   slideNumber: 'c/t',
   transition: 'slide',
-  plugins: [Notes],
 });
 
 deck.initialize().then(() => {
-  const demos = [setupFlowDemo(), setupSoundDemo()];
-  const sync = () => {
-    const current = deck.getCurrentSlide();
-    for (const demo of demos) demo.setActive(current.contains(demo.root));
-  };
+  // The chaos sketch is painted on the cover's background layer, which spans
+  // the whole screen rather than just the 1200×675 slide.
+  const cover = document.querySelector('.cover');
+  const chaos = createChaosBackground(deck.getSlideBackground(cover));
+  const sync = () => chaos.setActive(deck.getCurrentSlide() === cover);
   deck.on('slidechanged', sync);
   sync();
 });

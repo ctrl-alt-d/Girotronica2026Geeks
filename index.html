@@ -24,350 +24,120 @@
               <img class="cover-geekscat-logo" src="/assets/logo-classic/geekscat_logo.svg" alt="Geeks.cat" />
             </footer>
           </div>
-          <aside class="notes">Benvinguda. 45 minuts en total. Presentem-nos ràpid i anem per feina.</aside>
         </section>
 
-        <!-- ============ QUI SOM ============ -->
-        <section class="content-slide" aria-labelledby="who-title">
-          <div class="slide-content">
-            <h2 id="who-title">Qui som?</h2>
-            <div class="slide-body who-body">
-              <article class="who-card">
-                <h3>Joan Leon</h3>
-                <ul>
-                  <li>Frontend Performance Expert a FedEx</li>
-                  <li>Google Developer Expert en Web Technologies</li>
-                </ul>
-              </article>
-              <article class="who-card">
-                <h3>Dani Herrera</h3>
-                <ul>
-                  <li>Professor del cicle formatiu DAW a l'Ins Cendrassos</li>
-                  <li>Desenvolupador d'aplicacions web</li>
-                  <li>Organitzador de l'a11yConf</li>
-                </ul>
-              </article>
-              <p class="who-geeks">
-                <img src="/assets/logo-classic/geekscat_logo.svg" alt="" />
-                <span>Tots dos som de la junta de l'associació <strong>Geeks.cat</strong></span>
-              </p>
+        <!-- ============ INTRODUCCIÓ ============ -->
+        <section>
+          <section class="section-slide" aria-labelledby="intro-title">
+            <div class="section-content">
+              <p class="section-number" aria-hidden="true">01</p>
+              <h2 id="intro-title">Introducció</h2>
             </div>
-          </div>
-          <aside class="notes">1 minut. Geeks.cat: qui som, què fem, com apuntar-s'hi.</aside>
-        </section>
-
-        <!-- ============ PREGUNTA INICIAL ============ -->
-        <section class="content-slide" aria-labelledby="why-title">
-          <div class="slide-content">
-            <h2 id="why-title">Per a què serveix programar?</h2>
-            <div class="slide-body why-body">
-              <ul class="why-list">
-                <li class="fragment">Per fer apps i webs</li>
-                <li class="fragment">Per fer videojocs</li>
-                <li class="fragment">Per guanyar-se la vida</li>
-              </ul>
-              <p class="why-punch fragment">…i també per <strong>jugar</strong>, fer <strong>art</strong> i fer el <strong>pallasso</strong><span class="clown-nose" aria-hidden="true"></span></p>
-            </div>
-          </div>
-          <aside class="notes">Preguntar a la sala abans de mostrar les respostes. Mans enlaire: qui ha programat alguna vegada?</aside>
-        </section>
-
-        <!-- ============ 01 · CREATIVE CODING ============ -->
-        <section class="section-slide" aria-labelledby="s1-title">
-          <div class="section-content">
-            <p class="section-number" aria-hidden="true">01</p>
-            <h2 id="s1-title">Creative coding</h2>
-            <p class="section-lead">Programar per expressar-se</p>
-          </div>
-        </section>
-
-        <section class="content-slide" aria-labelledby="cc-what-title">
-          <div class="slide-content">
-            <h2 id="cc-what-title">Què és el creative coding?</h2>
-            <div class="slide-body statement-body">
-              <p class="statement">Programar per crear <strong>experiències</strong>,<br />no pas <span class="strike">productes que serveixen per a alguna cosa</span>.</p>
-              <ul class="chips" aria-label="Àmbits del creative coding">
-                <li>Art visual</li>
-                <li>Disseny</li>
-                <li>Música</li>
-                <li>Entreteniment</li>
-              </ul>
-            </div>
-          </div>
-          <aside class="notes">L'objectiu no és que funcioni «bé», és que expressi alguna cosa. No hi ha resposta correcta.</aside>
-        </section>
-
-        <section class="content-slide" aria-labelledby="draw-title">
-          <div class="slide-content">
-            <h2 id="draw-title">Codi que dibuixa</h2>
-            <div class="slide-body demo-body">
-              <div class="demo-stage">
-                <canvas id="flow-canvas" role="img" aria-label="Animació generativa: centenars de punts de colors es mouen seguint corrents invisibles i deixen un rastre, com si pintessin."></canvas>
-              </div>
-              <div class="demo-side">
-                <pre class="code"><code><span class="c">// per a cada punt, 60 cops per segon</span>
-angle = soroll(p.x, p.y, temps) * <mark id="flow-code-chaos">3</mark>
-p.x += cos(angle)
-p.y += sin(angle)
-pinta(p, color(angle))</code></pre>
-                <div class="demo-controls">
-                  <label for="flow-chaos">Caos</label>
-                  <input id="flow-chaos" type="range" min="1" max="10" step="1" value="3" />
-                  <button id="flow-toggle" type="button">Pausa</button>
-                  <button id="flow-clear" type="button">Esborra</button>
+          </section>
+          <section class="content-slide" aria-labelledby="fressa-title">
+            <div class="slide-content">
+              <h2 id="fressa-title">El meu primer clown computing</h2>
+              <div class="slide-body project-body">
+                <img class="project-image" src="/assets/projectes/fressa.png" alt="Captura de Fressa: un comptador a 3 i un quadrat verd petit dins d'un quadrat groc gros, sobre fons negre." />
+                <div class="project-links">
+                  <p>
+                    <span class="label">Repositori</span>
+                    <a href="https://github.com/ctrl-alt-d/fressa" target="_blank" rel="noopener noreferrer">github.com/ctrl-alt-d/fressa</a>
+                  </p>
+                  <p>
+                    <span class="label">Demo</span>
+                    <a href="https://ctrl-alt-d.github.io/fressa/" target="_blank" rel="noopener noreferrer">ctrl-alt-d.github.io/fressa/</a>
+                  </p>
                 </div>
-                <p class="demo-hint">Mou el ratolí per sobre: els punts fugen.</p>
               </div>
             </div>
-          </div>
-          <aside class="notes">Demo en viu. Moure el control de «Caos» i ensenyar que canviar UN número canvia tot el dibuix. Demanar a algú que triï el número.</aside>
+          </section>
         </section>
 
-        <section class="content-slide" aria-labelledby="sound-title">
-          <div class="slide-content">
-            <h2 id="sound-title">Codi que sona</h2>
-            <div class="slide-body demo-body">
-              <div class="demo-stage pads" id="sound-pads" role="group" aria-label="Teclat de vuit notes">
-                <button type="button" data-freq="261.63">Do</button>
-                <button type="button" data-freq="293.66">Re</button>
-                <button type="button" data-freq="329.63">Mi</button>
-                <button type="button" data-freq="392.00">Sol</button>
-                <button type="button" data-freq="440.00">La</button>
-                <button type="button" data-freq="523.25">Do</button>
-                <button type="button" data-freq="587.33">Re</button>
-                <button type="button" data-freq="659.25">Mi</button>
+        <!-- ============ NUS ============ -->
+        <section>
+          <section class="section-slide" aria-labelledby="nus-title">
+            <div class="section-content">
+              <p class="section-number" aria-hidden="true">02</p>
+              <h2 id="nus-title">Nus</h2>
+            </div>
+          </section>
+          <section class="content-slide" aria-labelledby="challenge-title" data-background-color="#000000">
+            <div class="slide-content">
+              <h2 id="challenge-title">Clown computing &amp; a11y</h2>
+              <div class="slide-body challenge-body">
+                <p><strong>Repte:</strong> 15 persones han comunicat discapacitat visual.</p>
+                <img class="challenge-logo" src="/assets/a11yconf/a11yconf_logo_dark.svg" alt="a11yConf" />
               </div>
-              <div class="demo-side">
-                <pre class="code"><code><span class="c">// una nota = una ona</span>
-so = audio.createOscillator()
-so.type = '<mark id="sound-code-wave">square</mark>'
-so.frequency.value = <mark id="sound-code-freq">440</mark>
-so.start()</code></pre>
-                <div class="demo-controls">
-                  <label for="sound-wave">Ona</label>
-                  <select id="sound-wave">
-                    <option value="square">square</option>
-                    <option value="sine">sine</option>
-                    <option value="sawtooth">sawtooth</option>
-                    <option value="triangle">triangle</option>
-                  </select>
-                  <button id="sound-auto" type="button" aria-pressed="false">Toca sol</button>
+            </div>
+          </section>
+          <section class="content-slide photo-slide" aria-labelledby="photos-title" data-background-color="#000000">
+            <div class="slide-content">
+              <h2 id="photos-title">Clown computing &amp; a11y</h2>
+              <div class="photo-gallery">
+                <img src="/assets/a11yconf/a11yconf-1.jpg" alt="Assistents a l'a11yConf al costat de dos gossos pigall." />
+                <img src="/assets/a11yconf/a11yconf-2.jpg" alt="Xerrada a l'a11yConf sobre l'European Accessibility Act, amb assistents i un gos pigall a la sala." />
+              </div>
+              <footer class="photo-footer">
+                <img class="photo-logo" src="/assets/a11yconf/a11yconf_logo_dark.svg" alt="a11yConf" />
+              </footer>
+            </div>
+          </section>
+        </section>
+
+        <!-- ============ DESENLLAÇ ============ -->
+        <section>
+          <section class="section-slide" aria-labelledby="desenllac-title">
+            <div class="section-content">
+              <p class="section-number" aria-hidden="true">03</p>
+              <h2 id="desenllac-title">Desenllaç</h2>
+            </div>
+          </section>
+          <section class="content-slide" aria-labelledby="whitney-title">
+            <div class="slide-content">
+              <h2 id="whitney-title">Whitney Houston challenge</h2>
+              <div class="slide-body project-body project-body--wide">
+                <img class="project-image" src="/assets/projectes/wh.png" alt="Captura del Whitney Houston challenge a Instagram: dos vídeos de persones a punt de picar un tambor." />
+                <div class="project-links">
+                  <p>
+                    <span class="label">Challenge</span>
+                    <a href="https://www.instagram.com/popular/whitney-houston-challenge/" target="_blank" rel="noopener noreferrer">instagram.com/popular/whitney-houston-challenge/</a>
+                  </p>
+                  <p>
+                    <span class="label">Publicació</span>
+                    <a href="https://www.instagram.com/p/DI9QnFEMXoX/" target="_blank" rel="noopener noreferrer">instagram.com/p/DI9QnFEMXoX/</a>
+                  </p>
                 </div>
-                <p class="demo-hint">Un clic, una nota. «Toca sol» improvisa a l'atzar.</p>
               </div>
             </div>
-          </div>
-          <aside class="notes">Demo en viu, comprovar el volum abans. Canviar el tipus d'ona perquè se senti la diferència. «Toca sol» = música generativa: l'ordinador improvisa.</aside>
-        </section>
-
-        <section class="content-slide" aria-labelledby="tools-title">
-          <div class="slide-content">
-            <h2 id="tools-title">Eines per començar avui</h2>
-            <div class="slide-body tools-body">
-              <ul class="tools">
-                <li><strong>p5.js</strong><span>Dibuixa amb JavaScript</span><a href="https://editor.p5js.org/" target="_blank" rel="noopener noreferrer">editor.p5js.org</a></li>
-                <li><strong>Hydra</strong><span>Visuals en directe</span><a href="https://hydra.ojack.xyz/" target="_blank" rel="noopener noreferrer">hydra.ojack.xyz</a></li>
-                <li><strong>Strudel</strong><span>Música amb codi</span><a href="https://strudel.cc/" target="_blank" rel="noopener noreferrer">strudel.cc</a></li>
-                <li><strong>Shadertoy</strong><span>Imatges fetes amb mates</span><a href="https://www.shadertoy.com/" target="_blank" rel="noopener noreferrer">shadertoy.com</a></li>
-                <li><strong>CodePen</strong><span>HTML, CSS i JS per jugar</span><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">codepen.io</a></li>
-                <li><strong>Processing</strong><span>El clàssic de l'art amb codi</span><a href="https://processing.org/" target="_blank" rel="noopener noreferrer">processing.org</a></li>
-              </ul>
-              <p class="tools-note">Totes gratuïtes. Gairebé totes funcionen al navegador, sense instal·lar res.</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Espai reservat: substituir per les slides d'en Joan -->
-        <section class="content-slide placeholder-slide" aria-labelledby="joan-title">
-          <div class="slide-content">
-            <h2 id="joan-title">Creative coding amb en Joan</h2>
-            <div class="slide-body statement-body">
-              <p class="placeholder-box">Espai reservat per a les slides d'en Joan Leon</p>
-            </div>
-          </div>
-          <aside class="notes">PENDENT: substituir aquesta slide pel contingut d'en Joan.</aside>
-        </section>
-
-        <!-- ============ 02 · CLOWN COMPUTING ============ -->
-        <section class="section-slide" aria-labelledby="s2-title">
-          <div class="section-content">
-            <p class="section-number" aria-hidden="true">02</p>
-            <h2 id="s2-title">Clown computing<span class="clown-nose" aria-hidden="true"></span></h2>
-            <p class="section-lead">Programar per fer el pallasso</p>
-          </div>
-        </section>
-
-        <section class="content-slide" aria-labelledby="clown-what-title">
-          <div class="slide-content">
-            <h2 id="clown-what-title">Cloud o clown?</h2>
-            <div class="slide-body versus-body">
-              <div class="versus">
-                <article class="versus-card">
-                  <h3>Cloud computing</h3>
-                  <p>Els ordinadors d'algú altre fent coses molt serioses.</p>
-                </article>
-                <article class="versus-card versus-card--clown">
-                  <h3>Clown computing</h3>
-                  <p>El teu ordinador fent el pallasso davant de tothom.</p>
-                </article>
-              </div>
-              <ol class="rules">
-                <li class="fragment">No serveix per a res</li>
-                <li class="fragment">Hi participa tothom</li>
-                <li class="fragment">Si falla, encara fa més gràcia</li>
-              </ol>
-            </div>
-          </div>
-          <aside class="notes">Les tres regles del clown computing. La tercera és la important: perdre la por a equivocar-se en públic.</aside>
-        </section>
-
-        <section class="content-slide" aria-labelledby="fressa-title">
-          <div class="slide-content">
-            <h2 id="fressa-title">El meu primer clown computing</h2>
-            <div class="slide-body project-body">
-              <img class="project-image" src="/assets/projectes/fressa.png" alt="Captura de Fressa: un comptador a 3 i un quadrat verd petit dins d'un quadrat groc gros, sobre fons negre." />
-              <div class="project-text">
-                <p class="project-name">Fressa</p>
-                <p class="project-desc">Fent fressa, cal encaixar el quadrat petit dins del gros durant <strong>5 segons seguits</strong>.</p>
-                <p class="project-link">
-                  <span class="label">Juguem-hi</span>
-                  <a href="https://ctrl-alt-d.github.io/fressa/" target="_blank" rel="noopener noreferrer">ctrl-alt-d.github.io/fressa</a>
-                </p>
-                <p class="project-link">
-                  <span class="label">El codi (p5.js)</span>
-                  <a href="https://github.com/ctrl-alt-d/fressa" target="_blank" rel="noopener noreferrer">github.com/ctrl-alt-d/fressa</a>
-                </p>
+          </section>
+          <section class="content-slide" aria-labelledby="massbeat-title">
+            <div class="slide-content">
+              <h2 id="massbeat-title">Whitney's MassBeat Challenge</h2>
+              <div class="slide-body project-body project-body--wide">
+                <img class="project-image" src="/assets/projectes/game.png" alt="Pantalla d'inici de Whitney's MassBeat Challenge, amb un camp per escriure el teu nom i el botó per unir-se al joc." />
+                <div class="project-links">
+                  <p>
+                    <span class="label">Jugar</span>
+                    <a href="https://w.ctrl-alt-d.net/" target="_blank" rel="noopener noreferrer">https://w.ctrl-alt-d.net/</a>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <aside class="notes">Obrir la demo i jugar amb tota la sala. Cal donar permís de micròfon i fer clic per activar l'àudio. Anar pujant la dificultat.</aside>
-        </section>
-
-        <!-- ============ 03 · ACCESSIBILITAT ============ -->
-        <section class="section-slide" aria-labelledby="s3-title">
-          <div class="section-content">
-            <p class="section-number" aria-hidden="true">03</p>
-            <h2 id="s3-title">Accessibilitat</h2>
-            <p class="section-lead">a11y = <span class="a11y-word">a<span>ccessibilit</span>y</span> <span class="a11y-count">(11 lletres al mig)</span></p>
-          </div>
-        </section>
-
-        <section class="content-slide" aria-labelledby="challenge-title" data-background-color="#000000">
-          <div class="slide-content">
-            <h2 id="challenge-title">Clown computing &amp; a11y</h2>
-            <div class="slide-body challenge-body">
-              <p><strong>El repte:</strong> a la sala hi haurà 15 persones amb discapacitat visual.</p>
-              <p class="challenge-question fragment">Com jugues a Fressa si no veus la pantalla?</p>
-              <img class="challenge-logo" src="/assets/a11yconf/a11yconf_logo_dark.svg" alt="a11yConf" />
+          </section>
+          <section class="qr-slide" aria-labelledby="qr-title">
+            <div class="qr-content">
+              <h2 id="qr-title"><a href="https://w.ctrl-alt-d.net/" target="_blank" rel="noopener noreferrer">w.ctrl-alt-d.net</a></h2>
+              <img class="qr-image" src="/assets/projectes/qr.png" alt="Codi QR per entrar al joc a https://w.ctrl-alt-d.net/" />
             </div>
-          </div>
-          <aside class="notes">Deixar la pregunta a l'aire i recollir idees de la sala abans de continuar.</aside>
-        </section>
-
-        <section class="content-slide photo-slide" aria-labelledby="photos-title" data-background-color="#000000">
-          <div class="slide-content">
-            <h2 id="photos-title">a11yConf</h2>
-            <div class="photo-gallery">
-              <img src="/assets/a11yconf/a11yconf-1.jpg" alt="Assistents a l'a11yConf al costat de dos gossos pigall." />
-              <img src="/assets/a11yconf/a11yconf-2.jpg" alt="Xerrada a l'a11yConf sobre l'European Accessibility Act, amb assistents i un gos pigall a la sala." />
-            </div>
-          </div>
-        </section>
-
-        <section class="content-slide" aria-labelledby="responsible-title">
-          <div class="slide-content">
-            <h2 id="responsible-title">Tecnologia responsable</h2>
-            <div class="slide-body responsible-body">
-              <p class="statement statement--small">Si no hi pot jugar tothom, <strong>no fa gràcia</strong>.</p>
-              <ul class="qa">
-                <li class="fragment"><span class="q">No hi veus?</span><span class="a">Que soni, i que el lector de pantalla ho pugui llegir</span></li>
-                <li class="fragment"><span class="q">No hi sents?</span><span class="a">Que es vegi, que hi hagi text</span></li>
-                <li class="fragment"><span class="q">No pots fer servir el ratolí?</span><span class="a">Que funcioni amb teclat</span></li>
-              </ul>
-            </div>
-          </div>
-          <aside class="notes">Missatge clau: l'accessibilitat no és un extra, és pensar en tothom des del principi. Les demos d'aquesta presentació funcionen amb teclat i tenen descripció.</aside>
-        </section>
-
-        <!-- ============ 04 · ARA VOSALTRES ============ -->
-        <section class="section-slide" aria-labelledby="s4-title">
-          <div class="section-content">
-            <p class="section-number" aria-hidden="true">04</p>
-            <h2 id="s4-title">Ara us toca a vosaltres</h2>
-            <p class="section-lead">Traieu el mòbil (sí, de veritat)</p>
-          </div>
-        </section>
-
-        <section class="content-slide" aria-labelledby="whitney-title">
-          <div class="slide-content">
-            <h2 id="whitney-title">Whitney Houston challenge</h2>
-            <div class="slide-body project-body project-body--wide">
-              <img class="project-image" src="/assets/projectes/wh.png" alt="Captura del Whitney Houston challenge a Instagram: dos vídeos de persones a punt de picar un tambor." />
-              <div class="project-text">
-                <p class="project-desc">A <em>I Will Always Love You</em> hi ha un silenci… i un cop de bateria.</p>
-                <p class="project-desc"><strong>El repte: clavar-lo.</strong></p>
-                <p class="project-link">
-                  <span class="label">Challenge</span>
-                  <a href="https://www.instagram.com/popular/whitney-houston-challenge/" target="_blank" rel="noopener noreferrer">instagram.com/popular/whitney-houston-challenge</a>
-                </p>
-                <p class="project-link">
-                  <span class="label">Un exemple</span>
-                  <a href="https://www.instagram.com/p/DI9QnFEMXoX/" target="_blank" rel="noopener noreferrer">instagram.com/p/DI9QnFEMXoX</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-slide" aria-labelledby="massbeat-title">
-          <div class="slide-content">
-            <h2 id="massbeat-title">Whitney's MassBeat Challenge</h2>
-            <div class="slide-body project-body project-body--wide">
-              <img class="project-image" src="/assets/projectes/game.png" alt="Pantalla d'inici de Whitney's MassBeat Challenge, amb un camp per escriure el teu nom i el botó per unir-se al joc." />
-              <div class="project-text">
-                <p class="project-desc">El mateix repte, però <strong>tota la sala alhora</strong>, cadascú amb el seu mòbil.</p>
-                <p class="project-desc">Prem el botó en el moment exacte.</p>
-                <p class="project-link">
-                  <span class="label">Jugar</span>
-                  <a href="https://w.ctrl-alt-d.net/" target="_blank" rel="noopener noreferrer">w.ctrl-alt-d.net</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <aside class="notes">Explicar les regles abans d'ensenyar el QR. Pensat perquè s'hi pugui jugar sense veure la pantalla.</aside>
-        </section>
-
-        <section class="qr-slide" aria-labelledby="qr-title">
-          <div class="qr-content">
-            <h2 id="qr-title"><a href="https://w.ctrl-alt-d.net/" target="_blank" rel="noopener noreferrer">w.ctrl-alt-d.net</a></h2>
-            <img class="qr-image" src="/assets/projectes/qr.png" alt="Codi QR per entrar al joc a https://w.ctrl-alt-d.net/" />
-          </div>
-          <aside class="notes">Deixar temps perquè tothom entri. Juguem!</aside>
-        </section>
-
-        <section class="content-slide" aria-labelledby="next-title">
-          <div class="slide-content">
-            <h2 id="next-title">I demà, què?</h2>
-            <div class="slide-body next-body">
-              <ol class="steps">
-                <li class="fragment"><strong>Obre</strong> editor.p5js.org i fes que alguna cosa es mogui</li>
-                <li class="fragment"><strong>Copia</strong> el codi de Fressa i espatlla'l fins que sigui teu</li>
-                <li class="fragment"><strong>Ensenya-ho</strong> a algú: a classe, a casa o a Geeks.cat</li>
-              </ol>
-            </div>
-          </div>
-          <aside class="notes">Tancament: no cal permís ni saber-ne molt per començar.</aside>
+          </section>
         </section>
 
         <!-- ============ FI ============ -->
         <section class="closing-slide" aria-labelledby="closing-title">
           <div class="closing-content">
-            <h2 id="closing-title">Gràcies!<span class="clown-nose" aria-hidden="true"></span></h2>
+            <h2 id="closing-title">- FI -</h2>
             <p class="closing-speakers">Joan Leon <span aria-hidden="true">·</span> Dani Herrera</p>
-            <p class="closing-link">
-              <span class="label">Les slides</span>
-              <a href="https://github.com/ctrl-alt-d/Girotronica2026Geeks" target="_blank" rel="noopener noreferrer">github.com/ctrl-alt-d/Girotronica2026Geeks</a>
-            </p>
             <div class="closing-logos">
               <img class="closing-geekscat-logo" src="/assets/logo-classic/geekscat_logo.svg" alt="Geeks.cat" />
               <img class="closing-a11yconf-logo" src="/assets/a11yconf/a11yconf_logo_dark.svg" alt="a11yConf" />
